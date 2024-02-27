@@ -1,0 +1,52 @@
+name: canari-sprint
+channels:
+  - conda-forge
+  - defaults
+  - bodc
+dependencies:
+  - python=3.10.12
+# jupyter
+  - jupyterlab
+  - nb_conda_kernels
+# dask
+  - dask
+  - distributed
+# computing
+  - numpy
+  - scipy
+  - numba
+  - bottleneck
+# netcdf
+  - netcdf4
+  - xarray[complete]
+  - zarr
+  - iris
+  - cftime
+  - intake-xarray
+# plotting
+  - matplotlib
+  - cartopy
+  - seaborn
+  - nc-time-axis
+  - cmocean
+# regridding
+  - esmpy
+  - xesmf
+  - esmf
+# others
+  - ipykernel
+  - gsw
+  - git
+  - nco
+  - regionmask
+  - geopy
+  - tqdm
+  - aiohttp
+  - requests
+  - geos
+  - shapely
+  - pyshp
+  - pip
+  - coast
+  - pip:
+    - numbagg

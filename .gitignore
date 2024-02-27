@@ -1,0 +1,15 @@
+build/
+dist/
+*.egg-info/
+*.env
+*__pycache__/
+.eggs/
+.ipynb_checkpoints/
+*.nc
+*.png
+example_files/
+*.pyc
+*.DS_Store
+.vscode
+config/nemo_tst_gridded.json
+.python-version
