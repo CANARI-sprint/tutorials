@@ -1,8 +1,4 @@
 name: canari-sprint
-channels:
-  - conda-forge
-  - defaults
-  - bodc
 dependencies:
   - python=3.10.12
 # jupyter
@@ -47,6 +43,6 @@ dependencies:
   - shapely
   - pyshp
   - pip
-  - coast
+  - bodc::coast
   - pip:
     - numbagg
