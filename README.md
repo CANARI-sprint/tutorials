@@ -16,7 +16,7 @@ This action may take a 10-30 minutes. To monitor this command, you may add the f
 2. Now, you need to add two packages in order to allow the notebook to see the environment:
 
     ```bash
-    conda install --name canari-sprint ipykernel pyjokes
+    conda install --name canari-sprint ipykernel
     ```
 
 3. And then, install the environment as an "ipykernel" so that the Notebook Service will find it:
