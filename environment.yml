@@ -19,12 +19,14 @@ dependencies:
   - iris
   - cftime
   - intake-xarray
+  - cf-python
+  - nc-time-axis
 # plotting
   - matplotlib
   - cartopy
   - seaborn
-  - nc-time-axis
   - cmocean
+  - cmasher
 # regridding
   - esmpy
   - xesmf
@@ -42,7 +44,8 @@ dependencies:
   - geos
   - shapely
   - pyshp
-  - pip
+  - pyjokes 
   - bodc::coast
+  - pip
   - pip:
     - numbagg
