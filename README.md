@@ -2,34 +2,34 @@
 
 Welcome to the GitHub repository dedicated to tutorials for the CANARI Sprint. Here, you will find comprehensive guides and resources to get you started and enhance your experience with the CANARI Sprint.
 
-## Environment Setup on Jasmin Jupyter Hub
+## Setting Up Your Environment on Jasmin Jupyter Hub
 
-In order to setup the conda environment, please follow the steps described in the [documentation](https://canari-sprint.github.io/docs/tutorials/#tutorial-1-configuring-and-using-the-jasmin-notebooks-service).
+For configuring the conda environment, please adhere to the instructions outlined in our [documentation](https://canari-sprint.github.io/docs/jasmin_notebook_service/).
 
-If you want to use your own environment, you can create a `.yml` like the [environment.yml](https://github.com/CANARI-sprint/tutorials/blob/main/environment.yml) file. And then follow these steps
+If you prefer to configure a custom environment, you're encouraged to model it after our [environment.yml](https://github.com/CANARI-sprint/tutorials/blob/main/environment.yml) file by following these steps:
 
-1. Create the conda environment using the following command. This will install all required packages as specified in the `environment.yml` file and create the `canari-sprint` environment.
+1. To create the conda environment, execute the command below. This installs all necessary packages as delineated in the `environment.yml` file and establishes the `canari-sprint` environment.
 
     ```bash
     conda env create --file environment.yml
     ```
-This action may take a 10-30 minutes. To monitor this command, you may add the flag `-vv` to the command.
+Note: This process might take between 10 to 30 minutes. Consider using `-vv` flag for verbose output.
 
-2. Now, you need to add two packages in order to allow the notebook to see the environment:
+2. Next, incorporate two essential packages to ensure the notebook interface can interact with the environment:
 
     ```bash
     conda install --name canari-sprint ipykernel
     ```
 
-3. And then, install the environment as an "ipykernel" so that the Notebook Service will find it:
+3. Subsequently, register the environment as an "ipykernel" to make it recognizable to the Notebook Service:
 
     ```bash
     conda run --name canari-sprint python -m ipykernel install --user --name canari-sprint
     ```
 
-Now, start a new Notebook or Console and you will see that `canari-sprint` is given as kernel option. You can now use it :-)
+Upon starting a new Notebook or Console, you will see `canari-sprint` as an available kernel option, ready for use.
 
-4. (Only if you are running locally): Once the installation is complete, activate the `canari-sprint` environment:
+4. (For local setups only): Once installation concludes, activate the `canari-sprint` environment with:
 
     ```bash
     conda activate canari-sprint
@@ -37,25 +37,24 @@ Now, start a new Notebook or Console and you will see that `canari-sprint` is gi
 
 ## Accessing CANARI Workspace Data
 
-To access the CANARI workspace data, you may want to create a symbolic link in your user directory:
+To link to the CANARI workspace data from your user directory, consider creating a symbolic link:
 
 ```
 ln -s /gws/nopw/j04/canari /home/users/<USERNAME>/CANARI
 ```
 
-## Obtaining Configuration Data
+## Tutorials Overview
 
-For accessing sample data and necessary configuration files, follow the steps below:
+Expect to find tutorials on:
 
-    ```bash
-    wget -c https://github.com/British-Oceanographic-Data-Centre/COAsT/archive/refs/heads/master.zip && unzip master.zip && rm -f master.zip
-    mv COAsT-master/config ./config && rm -rf COAsT-master
-    ```
-
-## Tutorial Overview
-
-The tutorials provided in this repository are adapted from the [COAsT package documentation](https://british-oceanographic-data-centre.github.io/COAsT/). Here's what you can expect:
-
-- **Gridded Data Handling:** Learn how to work with gridded datasets using the COAsT package.
-
-- **General Utility and Analysis Tools:** Discover scripts for general utility and analysis within the COAsT framework.
+- [Basic Data Manipulation](https://github.com/CANARI-sprint/tutorials/blob/main/notebooks/1_basic_manipulation.ipynb): Introduction to data handling using the COAsT package.
+- [Exporting to NetCDF](https://github.com/CANARI-sprint/tutorials/blob/main/notebooks/2_export_to_netcdf.ipynb): Guide on exporting outputs to netCDF format for future use or analysis.
+- [Climatology Tutorial](https://github.com/CANARI-sprint/tutorials/blob/main/notebooks/3_climatology_tutorial.ipynb): Demonstrates calculating climatological means and multi-year climatologies.
+- [Calculating EOFs](https://github.com/CANARI-sprint/tutorials/blob/main/notebooks/4_calculate_eof.ipynb): How to utilize COAsT for computing Empirical Orthogonal Functions (EOFs).
+- [Potential Energy Analysis](https://github.com/CANARI-sprint/tutorials/blob/main/notebooks/5_potential_energy.ipynb): Tutorial on calculating Potential Energy Anomaly and applying regional masking.
+- [Pycnocline Diagnostics](https://github.com/CANARI-sprint/tutorials/blob/main/notebooks/6_pycnocline.ipynb): Exploration of pycnocline depth and thickness diagnostics.
+- [Seasonal Decomposition](https://github.com/CANARI-sprint/tutorials/blob/main/notebooks/7_seasonal_decomp.ipynb): Techniques for decomposing time series into trend, seasonal, and residual components.
+- [Transect Calculations](https://github.com/CANARI-sprint/tutorials/blob/main/notebooks/8_transect_calculation.ipynb): Methods for creating data transects.
+- [Basic Plots and Analysis](https://github.com/CANARI-sprint/tutorials/blob/main/notebooks/9_basic_plots_and_analysis.ipynb): Utilizing CANARI-LE historical data for Sea Surface Temperature (SST) visualization.
+- [Box Profile Development](https://github.com/CANARI-sprint/tutorials/blob/main/notebooks/10_box_profile_development.ipynb): Computing ocean profiles with selected variables.
+- [Creating a Slurm File for Box Profile](https://github.com/CANARI-sprint/tutorials/blob/main/notebooks/11_make_slurm_file_for_box_profile.ipynb): Guidance on generating a slurm file for computing profiles within a specified box.
