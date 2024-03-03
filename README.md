@@ -45,7 +45,7 @@ ln -s /gws/nopw/j04/canari /home/users/<USERNAME>/CANARI
 
 ## Tutorials Overview
 
-Expect to find tutorials on:
+The first 8 tutorials refer to the [COAst python package](https://british-oceanographic-data-centre.github.io/COAsT/#about).  Expect to find tutorials on:
 
 - [Basic Data Manipulation](https://github.com/CANARI-sprint/tutorials/blob/main/notebooks/1_basic_manipulation.ipynb): Introduction to data handling using the COAsT package.
 - [Exporting to NetCDF](https://github.com/CANARI-sprint/tutorials/blob/main/notebooks/2_export_to_netcdf.ipynb): Guide on exporting outputs to netCDF format for future use or analysis.
@@ -56,5 +56,5 @@ Expect to find tutorials on:
 - [Seasonal Decomposition](https://github.com/CANARI-sprint/tutorials/blob/main/notebooks/7_seasonal_decomp.ipynb): Techniques for decomposing time series into trend, seasonal, and residual components.
 - [Transect Calculations](https://github.com/CANARI-sprint/tutorials/blob/main/notebooks/8_transect_calculation.ipynb): Methods for creating data transects.
 - [Basic Plots and Analysis](https://github.com/CANARI-sprint/tutorials/blob/main/notebooks/9_basic_plots_and_analysis.ipynb): Utilizing CANARI-LE historical data for Sea Surface Temperature (SST) visualization.
-- [Box Profile Development](https://github.com/CANARI-sprint/tutorials/blob/main/notebooks/10_box_profile_development.ipynb): Computing ocean profiles with selected variables.
-- [Creating a Slurm File for Box Profile](https://github.com/CANARI-sprint/tutorials/blob/main/notebooks/11_make_slurm_file_for_box_profile.ipynb): Guidance on generating a slurm file for computing profiles within a specified box.
+- [UK Precipitation Plots](https://github.com/CANARI-sprint/tutorials/blob/main/notebooks/0_UK_Precipitation_with_iris.ipynb): Making plots of UK precipitation using the iris python package, curtesy of Ben Harvey.
+- [Box Profile Development](https://github.com/CANARI-sprint/tutorials/blob/main/notebooks/11_compute_and_plot_an_ocean_profile_using_lotus.ipynb): Computing ocean profiles with selected variables making use of the lotus queue on JASMIN.
