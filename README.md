@@ -45,7 +45,7 @@ ln -s /gws/nopw/j04/canari /home/users/<USERNAME>/CANARI
 
 ## Tutorials Overview
 
-The first 8 tutorials refer to the [COAst python package](https://british-oceanographic-data-centre.github.io/COAsT/#about).  Expect to find tutorials on:
+The first 8 tutorials refer to the [COAsT python package](https://british-oceanographic-data-centre.github.io/COAsT/#about).  Expect to find tutorials on:
 
 - [Basic Data Manipulation](https://github.com/CANARI-sprint/tutorials/blob/main/notebooks/1_basic_manipulation.ipynb): Introduction to data handling using the COAsT package.
 - [Exporting to NetCDF](https://github.com/CANARI-sprint/tutorials/blob/main/notebooks/2_export_to_netcdf.ipynb): Guide on exporting outputs to netCDF format for future use or analysis.
