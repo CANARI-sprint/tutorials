@@ -1,0 +1,55 @@
+name: canari-dask
+dependencies:
+  - python=3.10.12
+# jupyter
+  - jupyterlab
+  - nb_conda_kernels
+# dask and dependencies
+  - dask
+  - distributed
+  - dask-gateway
+  - mimesis
+  - graphviz
+  - python-graphviz
+# computing
+  - numpy
+  - scipy
+  - numba
+  - bottleneck
+# netcdf
+  - netcdf4
+  - xarray[complete]
+  - zarr
+  - iris
+  - cftime
+  - intake-xarray
+  - cf-python
+  - nc-time-axis
+# plotting
+  - matplotlib
+  - cartopy
+  - seaborn
+  - cmocean
+  - cmasher
+# regridding
+  - esmpy
+  - xesmf
+  - esmf
+# others
+  - ipykernel
+  - gsw
+  - git
+  - nco
+  - regionmask
+  - geopy
+  - tqdm
+  - aiohttp
+  - requests
+  - geos
+  - shapely
+  - pyshp
+  - pyjokes 
+  - bodc::coast
+  - pip
+  - pip:
+    - numbagg
