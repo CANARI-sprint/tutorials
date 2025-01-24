@@ -9,7 +9,7 @@ dependencies:
   - distributed
 # computing
   - numpy
-  - scipy
+  - scipy=1.13
   - numba
   - bottleneck
 # netcdf
