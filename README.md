@@ -58,3 +58,8 @@ The first 8 tutorials refer to the [COAsT python package](https://british-oceano
 - [Basic Plots and Analysis](https://github.com/CANARI-sprint/tutorials/blob/main/notebooks/9_basic_plots_and_analysis.ipynb): Utilizing CANARI-LE historical data for Sea Surface Temperature (SST) visualization.
 - [UK Precipitation Plots](https://github.com/CANARI-sprint/tutorials/blob/main/notebooks/0_UK_Precipitation_with_iris.ipynb): Making plots of UK precipitation using the iris python package, curtesy of Ben Harvey.
 - [Box Profile Development](https://github.com/CANARI-sprint/tutorials/blob/main/notebooks/11_compute_and_plot_an_ocean_profile_using_lotus.ipynb): Computing ocean profiles with selected variables making use of the lotus queue on JASMIN.
+- [Polar Plotting Tutorial](https://github.com/CANARI-sprint/tutorials/blob/main/notebooks/12_polar_plotting.ipynb): Polar plotting NEMO velocities with quivers (similar to a [COAsT tutorial](https://british-oceanographic-data-centre.github.io/COAsT/docs/examples/configs_gallery/)). You will require the [example data](https://british-oceanographic-data-centre.github.io/COAsT/docs/getting-started/#example-data-files) and may need to set the pyproj database accordingly:
+  ```
+  import pyproj
+  pyproj.datadir.set_data_dir('/home/users/[JASMIN_USERNAME]/.conda/envs/canari-sprint/share/proj') 
+  ```
